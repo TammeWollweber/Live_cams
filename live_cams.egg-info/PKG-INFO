@@ -1,3 +1,21 @@
+Metadata-Version: 2.1
+Name: live-cams
+Version: 0.1
+Summary: GUI for live view of basler cameras
+Home-page: git@github.com:TammeWollweber/live_cams.git
+Author: Fabian Scheiba and Tamme Wollweber
+Author-email: fabian.scheiba@cfel.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
 # live_cams
 ## Installation from source
 Here are the instructions to install the program from source using Anaconda to resolve the dependencies.
@@ -19,3 +37,5 @@ Here are the instructions to install the program from source using Anaconda to r
    $ pip install -e .
    ```
    The executable `live_cams` will then be available in your path.
+
+

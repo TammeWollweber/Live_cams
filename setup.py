@@ -31,4 +31,8 @@ setuptools.setup(
 	'pypylon',
 	'pillow',
     ],
+    entry_points={'gui_scripts': [
+        'live_cams = code.gui:main',
+        ]
+    }
 )

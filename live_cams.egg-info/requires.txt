@@ -1,0 +1,7 @@
+numpy
+pyqt5
+matplotlib
+pyqtgraph
+pyyaml
+pypylon
+pillow
