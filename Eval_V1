@@ -1,0 +1,20 @@
+addpath('Desktop/npy-matlab')  
+
+
+avg = readNPY('data/20220315/cam_22553114/SUM_0001.npy');
+
+pic = readNPY('data/20220315/cam_22553114/0000.npy');
+
+
+
+figure
+imagesc(avg)
+shading flat
+colorbar
+caxis([0 4000])
+
+figure
+imagesc(pic)
+shading flat
+colorbar
+caxis([0 4000])

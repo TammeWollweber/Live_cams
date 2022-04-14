@@ -1,0 +1,35 @@
+
+
+import os
+from datetime import date, timedelta
+import matplotlib.pyplot as plt
+
+maindatatdir = 'C:/Users/fscheiba/Documents/testdir/'
+trs = 1000;
+intprofile = 2000;
+
+today = date.today()
+yourdatetime = today.strftime("%Y%m%d")
+yourdatetime < today.strftime("%Y%m%d")
+newdir = (maindatatdir+str(today.strftime("%Y%m%d")));
+print('current directory: ' + newdir)
+isdir = os.path.isdir(newdir);
+if isdir == False and intprofile >= trs:
+    os.mkdir(newdir);
+    yesterday = date.today() - timedelta(days=1);
+    
+    # Save current average file here
+    
+    
+    listdir = (os.listdir(maindatatdir))
+    lastday = (listdir[-2]);
+    lastdir = maindatatdir + str(lastday);
+    
+    # load last day average file here
+    
+    
+else:
+    print('directory already exists')
+
+    
+print('last directory: ' + lastdir)

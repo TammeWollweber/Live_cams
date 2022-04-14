@@ -1,0 +1,11 @@
+########################################
+Manual for BeamCam_Monitor	
+last edit 07.04.2022 by F. Scheiba
+########################################
+
+(1) how to start?
+Open Terminal in the main programm folder ("BeamCam_Monitor") on the Desktop and type "python gui.py" to open the gui 
+
+(2) change setting for camera properties, add new cameras, etc in "config.yaml" file in main program folder and restart the program
+
+(3) timers for updating live view and saving routine are in "cam_controls.py"

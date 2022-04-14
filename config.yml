@@ -1,0 +1,77 @@
+Camera1:
+        camident: 1
+        SerialNumber: 23202608
+        Position: 'right'
+        inttime: 15000
+        filepath: 'cam_23202608'
+        refday: 20220406
+        rec_trs: 100000
+        caxisval: [0, 200]
+Camera2:
+        camident: 2
+        SerialNumber: 22927185
+        Position: 'unknown'
+        inttime: 20000
+        filepath: 'cam_22927185'
+        refday: 20220406
+        rec_trs: 300000
+        caxisval: [0, 140]
+Camera3:
+        camident: 3
+        SerialNumber: 22553114
+        Position: 'Laser compressed'
+        inttime: 5000
+        filepath: 'cam_22553114'
+        refday: 20220406
+        rec_trs: 80000000
+        caxisval: [10, 800]
+Camera4:
+        camident: 4
+        SerialNumber: 24074883
+        Position: 'after ext. compressor'
+        inttime: 9000
+        filepath: 'cam_24074883'
+        refday: 20220406
+        rec_trs: 50000000
+        caxisval: [0, 2000]
+
+Camera5:
+        camident: 5
+        SerialNumber: 23769938
+        Position: 'DART'
+        inttime: 2000
+        filepath: 'cam_23769938'
+        refday: 20220406
+        rec_trs: 100000
+        caxisval: [0, 500]
+
+Camera6:
+        camident: 6
+        SerialNumber: 22775705
+        Position: 'Laser uncompressedUSB'
+        inttime: 20000
+        filepath: 'cam_22775705'
+        refday: 20220406
+        rec_trs: 200000
+        caxisval: [0, 170]
+
+Camera7:
+        camident: 7
+        SerialNumber: 24074882
+        Position: 'Laser uncompressed'
+        inttime: 20000
+        filepath: 'cam_24074882'
+        refday: 20220406
+        rec_trs: 30000000
+        caxisval: [0, 400]
+
+
+
+
+
+
+
+
+
+
+
