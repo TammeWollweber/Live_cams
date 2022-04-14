@@ -1,7 +1,7 @@
 import os
 from PyQt5 import QtWidgets, QtGui, QtCore
 from PyQt5.QtGui import QPixmap
-from ops import Ops
+from .ops import Ops
 import pyqtgraph as pg
 import yaml
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QComboBox, QPushButton
@@ -11,7 +11,8 @@ class BigView(QtWidgets.QWidget):
     def __init__(self, parent, ops):
         super(BigView, self).__init__()
         self.parent = parent
-        self.fname = 'config.yml'
+        self.path = os.path.dirname(os.path.abspath(__file__))
+        self.fname = self.path + '/config.yml'
         self.ops = ops
         self.config = None
         self.config_labels = []

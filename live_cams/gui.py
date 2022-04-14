@@ -5,11 +5,11 @@ import warnings
 from PyQt5 import QtCore, QtGui, QtWidgets
 import pyqtgraph as pg
 import time as t
-from cam_controls import Cameras
-from conf_controls import Config
-from big_view import BigView
-from ops import Ops
-from howto import howto
+from .cam_controls import Cameras
+from .conf_controls import Config
+from .big_view import BigView
+from .ops import Ops
+from .howto import howto
 from PyQt5.QtGui import QIcon
 
 

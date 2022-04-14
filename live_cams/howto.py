@@ -5,7 +5,8 @@ import yaml
 class howto(QtWidgets.QWidget):
     def __init__(self, parent, ops):
         super(howto, self).__init__()
-        self.fname = 'manual.yml'
+        self.path = os.path.dirname(os.path.abspath(__file__))
+        self.fname = self.path + '/manual.yml'
         self.ops = ops
         self.manual = None
         self.config_labels = []
@@ -27,7 +28,7 @@ class howto(QtWidgets.QWidget):
         self.load_text()
 
     def load_text(self):
-        with open('manual.txt') as f:
+        with open(self.path + '/manual.txt') as f:
             contents = f.read()
         vbox_cam = QtWidgets.QVBoxLayout()
         label_cam = QtWidgets.QLabel()

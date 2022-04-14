@@ -1,13 +1,14 @@
 import os
 from PyQt5 import QtWidgets, QtGui, QtCore
-from ops import Ops
+from .ops import Ops
 import pyqtgraph as pg
 import yaml
 
 class Config(QtWidgets.QWidget):
     def __init__(self, ops):
         super(Config, self).__init__()
-        self.fname = 'config.yml'
+        self.path = os.path.dirname(os.path.abspath(__file__))
+        self.fname = self.path + '/config.yml'
         self.ops = ops
         self.config = None
         self.config_labels = []

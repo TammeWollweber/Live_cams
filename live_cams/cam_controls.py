@@ -1,11 +1,11 @@
 import os
 from PyQt5 import QtWidgets, QtGui, QtCore
 from PyQt5.QtGui import QPixmap
-from ops import Ops
+from .ops import Ops
 import pyqtgraph as pg
 from PIL import Image
 import numpy as np
-import ccmapp as ccmapp
+from . import ccmapp
 from numpy import loadtxt
 import pickle
 

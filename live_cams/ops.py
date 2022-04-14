@@ -10,6 +10,7 @@ from datetime import date, timedelta
 from numpy import savetxt
 from numpy import loadtxt
 from os import listdir
+import os 
 from re import search
 import glob
 import pickle
@@ -34,7 +35,8 @@ class Ops():
         self.cam_filepath = []
         self.k = []
         self.img = pylon.PylonImage()
-        self.fname = 'config.yml'
+        self.path = os.path.dirname(os.path.abspath(__file__))
+        self.fname = self.path + '/config.yml'
         self.load_config()
         self.converter = pylon.ImageFormatConverter()
         self.today = None
@@ -57,8 +59,6 @@ class Ops():
         self.loaded_list = []
         self.flag_rec = 1
         self.camfpathloc = []
-
-
 
 
 
@@ -114,7 +114,7 @@ class Ops():
             self.ref_day.append(ref_day)
 
     def load_cameras(self):
-        favorite_color = pickle.load(open("colormap1.pkl", "rb"))
+        favorite_color = pickle.load(open(self.path + "/colormap1.pkl", "rb"))
         self.loaded_list = favorite_color
         print("self.loaded_list: ", self.loaded_list)
         tlFactory = pylon.TlFactory.GetInstance()

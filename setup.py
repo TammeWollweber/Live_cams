@@ -32,7 +32,7 @@ setuptools.setup(
 	'pillow',
     ],
     entry_points={'gui_scripts': [
-        'live_cams = code.gui:main',
+        'live_cams = live_cams.gui:main',
         ]
     }
 )
