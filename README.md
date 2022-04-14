@@ -5,8 +5,8 @@ Here are the instructions to install the program from source using Anaconda to r
  * Download [Miniconda](https://docs.conda.io/en/latest/miniconda.html) if you do not already have it.
  * Clone this repository
  ```
- $ git clone git@github.com:TammeWollweber/live_cams.git
- $ cd live_cams
+ $ git clone git@github.com:TammeWollweber/Live_cams.git
+ $ cd Live_cams
  ```
  * Create a conda environment using the environment.yml file provided:
    ```
