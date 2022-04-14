@@ -1,4 +1,6 @@
 # live_cams
+A gui to get the live views from Basler cameras in the lab
+
 ## Installation from source
 Here are the instructions to install the program from source using Anaconda to resolve the dependencies.
 
